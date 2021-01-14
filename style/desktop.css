@@ -1,4 +1,9 @@
 /* Developed by Jozek Andrzej Hajduk Sánchez */
+:root {
+    --principal-color: #2b2d35;
+    --secundary-color: #171c30;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -7,34 +12,92 @@
 
 html {
     font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
     padding: 0 40rem;
+    background-color: var(--principal-color);
 }
 
 main {
     display: grid;
-    grid-template: 2fr 1fr 2fr / 1.3fr 3fr 2fr;
+    grid-template: 3fr 1fr 3fr / minmax(20%, 1.3fr) 3fr 2fr;
     grid-template-areas: "left-container video-container video-container" "left-container video-options video-options" "left-container principal-main principal-main";
     height: 100vh;
 }
 
 .left-container {
     grid-area: left-container;
-    background-color: aqua;
-    padding: 4rem 2rem;
+    background-color: var(--secundary-color);
+    padding: 4rem 1rem 4rem 2rem;
     display: grid;
     grid-template-rows: 10% 45% 45%;
+    grid-template-columns: minmax(80%, 1fr);
+    color: white;
 }
 
 .left-container__title {
-    font-size: 4rem;
+    font-size: 3em;
+}
+
+.left-container__title span:nth-of-type(2) {
     color: red;
 }
 
-.left-container__title span:first-of-type {
-    color: white;
+.left-container__subTitle{
+    font-size: 1.6em;
+    margin-bottom: 3rem
+}
+
+.left-container__playList {
+    height: 90%;
+    /* background-color: red; */
+}
+
+.left-container__videos, .left-container__friends-list{
+    padding-top: .5rem;
+    /* background-color: blue; */
+    height: 85%;
+    font-size: 1.4em;
+    overflow-y: hidden;
+    /* Saltos de lineas para que no haya overflow */
+    overflow-wrap: break-word;
+    cursor: pointer;
+    padding-left: 2rem;
+}
+
+.left-container__video-item:hover, .left-container__friend-item:hover {
+    color: rgb(247, 72, 72);
+    font-size: 1.1em;
+}
+
+.left-container__video-item {
+    margin-bottom: 1rem;
+}
+
+.left-container__videos:hover, .left-container__friends-list:hover {
+    overflow-Y: overlay;
+}
+
+/* .left-container__friends {
+    background-color: violet
+} */
+
+.left-container__friends-list {
+    list-style: none;
+    padding-left: 2rem;
+}
+
+.left-container__friend-item {
+    margin-bottom: 2rem;
+}
+
+.left-container__friend-item img{
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: .5rem;
+    border-radius: 50%;
 }
 
 .video-container {
