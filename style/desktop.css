@@ -1,0 +1,52 @@
+/* Developed by Jozek Andrzej Hajduk Sánchez */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 0 40rem;
+}
+
+main {
+    display: grid;
+    grid-template: 2fr 1fr 2fr / 1.3fr 3fr 2fr;
+    grid-template-areas: "left-container video-container video-container" "left-container video-options video-options" "left-container principal-main principal-main";
+    height: 100vh;
+}
+
+.left-container {
+    grid-area: left-container;
+    background-color: aqua;
+    padding: 4rem 2rem;
+    display: grid;
+    grid-template-rows: 10% 45% 45%;
+}
+
+.left-container__title {
+    font-size: 4rem;
+    color: red;
+}
+
+.left-container__title span:first-of-type {
+    color: white;
+}
+
+.video-container {
+    grid-area: video-container;
+    background-color: blue;
+}
+
+.video-options {
+    grid-area: video-options;
+}
+
+.principal-main {
+    grid-area: principal-main;
+    background-color: blueviolet;
+}
