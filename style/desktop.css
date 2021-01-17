@@ -97,7 +97,7 @@ main {
 
 .left-container__friend-item img{
     width: 3rem;
-    height: 3rem;.
+    height: 3rem;
     margin-bottom: .5rem;
     border-radius: 50%;
 }
@@ -127,9 +127,53 @@ main {
 
 .video-options {
     grid-area: video-options;
+    background-color: #495167;
+    padding: 2rem;
+    border-bottom: .2rem solid #c2c2c2;
+}
+
+.video-options__title {
+    font-size: 1.8em;
+    margin-bottom: .3rem;
+    color: white;
+}
+
+.video-options__views {
+    font-size: 1.4em;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.video-options__buttons {
+    width: 30%;
+    /* background-color: aliceblue; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #495167;
+}
+
+.button-add-list {
+    width: 50%;
+    padding: .7rem;
+    border-radius: .6rem;
+    outline: none;
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.button img {
+    width: 100%;
 }
 
 .principal-main {
     grid-area: principal-main;
     background-color: blueviolet;
 }
+
