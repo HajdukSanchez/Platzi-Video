@@ -1,7 +1,9 @@
 /* Developed by Jozek Andrzej Hajduk Sánchez */
 :root {
-    --principal-color: #2b2d35;
-    --secundary-color: #171c30;
+    --principal-color: #18191a;
+    --secundary-color: #191d20;
+    --text-color: #b0b3b8;
+    --complemental-color: #f74848;
 }
 
 * {
@@ -17,7 +19,7 @@ html {
 
 body {
     padding: 0 40rem;
-    background-color: var(--principal-color);
+    background-color: var(--secundary-color);
 }
 
 main {
@@ -29,20 +31,21 @@ main {
 
 .left-container {
     grid-area: left-container;
-    background-color: var(--secundary-color);
+    background-color: #131414;
     padding: 4rem 1rem 4rem 2rem;
     display: grid;
     grid-template-rows: 10% 45% 45%;
     grid-template-columns: minmax(80%, 1fr);
-    color: white;
+    color: var(--text-color);
 }
 
 .left-container__title {
     font-size: 3em;
+    color: white;
 }
 
 .left-container__title span:nth-of-type(2) {
-    color: red;
+    color: var(--complemental-color);
 }
 
 .left-container__subTitle{
@@ -69,8 +72,7 @@ main {
 }
 
 .left-container__video-item:hover, .left-container__friend-item:hover {
-    color: rgb(247, 72, 72);
-    font-size: 1.1em;
+    color: var(--complemental-color);
 }
 
 .left-container__video-item {
@@ -88,7 +90,7 @@ main {
 .left-container__friends-list {
     list-style: none;
     padding-left: 2rem;
-    height: 96%;
+    height: 93%;
 }
 
 .left-container__friend-item {
@@ -104,7 +106,7 @@ main {
 
 .video-container {
     grid-area: video-container;
-    background-color: #495167;
+    background-color: var(--principal-color);
 }
 
 .video-container__video {
@@ -127,21 +129,21 @@ main {
 
 .video-options {
     grid-area: video-options;
-    background-color: #495167;
+    background-color: var(--principal-color);
     padding: 2rem;
-    border-bottom: .2rem solid #c2c2c2;
+    border-bottom: .1rem solid #3a3b3c;
 }
 
 .video-options__title {
     font-size: 1.8em;
     margin-bottom: .3rem;
-    color: white;
+    color: var(--text-color);
 }
 
 .video-options__views {
     font-size: 1.4em;
     margin-bottom: 2rem;
-    color: white;
+    color: var(--text-color);
 }
 
 .video-options__buttons {
@@ -156,7 +158,7 @@ main {
     outline: none;
     border: none;
     cursor: pointer;
-    background-color: #495167;
+    background-color: var(--principal-color);
 }
 
 .button-add-list {
@@ -164,7 +166,7 @@ main {
     padding: .7rem;
     border-radius: .6rem;
     outline: none;
-    background-color: #ff4d4d;
+    background-color: var(--complemental-color);
     color: white;
 }
 
@@ -181,14 +183,14 @@ main {
 .principal-main__comments-container {
     width: 60%;
     height: 100%;
-    background-color: #18191a;
+    background-color: var(--principal-color);
     padding: 3rem;
 }
 
 .principal-main__title {
     font-size: 1.6em;
     margin-bottom: 2rem;
-    color: #b0b3b8;
+    color: var(--text-color);
 }
 
 .principal-main__comment-container {
@@ -218,7 +220,7 @@ main {
     margin-left: 2rem;
     outline: none;
     background-color: transparent;
-    color: #b0b3b8;
+    color: var(--text-color);
 }
 
 .principal-main__comment-list-container {
@@ -226,7 +228,7 @@ main {
     height: 75%;
     padding: 1rem;
     border-radius: .6rem;
-    color: #e4e6eb;
+    color: var(--text-color);
     background-color: #242526;
 }
 
@@ -255,7 +257,7 @@ main {
 .principal-main__suggestions-container {
     width: 40%;
     height: 100%;
-    background-color: #18191a;
+    background-color: var(--principal-color);
     padding: 3rem;
 }
 
