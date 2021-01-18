@@ -181,17 +181,18 @@ main {
 .principal-main__comments-container {
     width: 60%;
     height: 100%;
-    background-color: #ff4d4d;
+    background-color: #18191a;
     padding: 3rem;
 }
 
 .principal-main__title {
     font-size: 1.6em;
     margin-bottom: 2rem;
+    color: #b0b3b8;
 }
 
 .principal-main__comment-container {
-    background-color: azure;
+    background-color: #3a3b3c;
     width: 100%;
     height: 3.5rem;
     display: inline-flex;
@@ -216,14 +217,17 @@ main {
     border: 0;
     margin-left: 2rem;
     outline: none;
+    background-color: transparent;
+    color: #b0b3b8;
 }
 
 .principal-main__comment-list-container {
     overflow: hidden;
-    background-color: aqua;
     height: 75%;
     padding: 1rem;
     border-radius: .6rem;
+    color: #e4e6eb;
+    background-color: #242526;
 }
 
 .principal-main__comment-list-container:hover {
@@ -233,8 +237,8 @@ main {
 .principal-main__comment-item {
     display: flex;
     margin-bottom: 2rem;
-    padding-bottom: .5rem;
-    border-bottom: .1rem solid #495167;
+    padding-bottom: 1rem;
+    border-bottom: .1rem solid #3a3b3c;
 }
 
 .principal-main__user-picture img{
@@ -251,17 +255,39 @@ main {
 .principal-main__suggestions-container {
     width: 40%;
     height: 100%;
-    background-color: aqua;
+    background-color: #18191a;
     padding: 3rem;
 }
 
 .principal-main__suggestion-list {
-    background-color: aquamarine;
-    height: 90%;
+    height: 94%;
     overflow: hidden;
-    padding: 1rem;
+    padding: 1rem 3rem;
+    padding-left: 0;
+
+}
+
+.principal-main__suggestion-item {
+    text-decoration: none;
+    margin-bottom: 3rem;
+}
+
+.principal-main__suggestion-item a {
+    text-decoration: none;
+    color: white;
 }
 
 .principal-main__suggestion-list:hover {
     overflow-y: visible;
 }
+
+.principal-main__sugesstion-picture {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.principal-main__sugesstion-picture img {
+    width: 100%;
+    border-radius: .6rem;
+}
+
