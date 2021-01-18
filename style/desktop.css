@@ -22,7 +22,7 @@ body {
 
 main {
     display: grid;
-    grid-template: 3fr 1fr 3fr / minmax(20%, 1.3fr) 3fr 2fr;
+    grid-template: minmax(40%, 3fr) minmax(10%, 1fr) minmax(40%, 3fr) / minmax(20%, 1.3fr) 3fr 2fr;
     grid-template-areas: "left-container video-container video-container" "left-container video-options video-options" "left-container principal-main principal-main";
     height: 100vh;
 }
@@ -174,6 +174,94 @@ main {
 
 .principal-main {
     grid-area: principal-main;
-    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.principal-main__comments-container {
+    width: 60%;
+    height: 100%;
+    background-color: #ff4d4d;
+    padding: 3rem;
+}
+
+.principal-main__title {
+    font-size: 1.6em;
+    margin-bottom: 2rem;
+}
+
+.principal-main__comment-container {
+    background-color: azure;
+    width: 100%;
+    height: 3.5rem;
+    display: inline-flex;
+    margin-bottom: 3rem;
+    border-radius: .6rem;
+    align-items: center;
+}
+
+.principal-main__profile-picture {
+    margin-left: 1rem;
+}
+
+.principal-main__profile-picture img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.principal-main__comment-container input {
+    width: 80%;
+    height: 90%;
+    border: 0;
+    margin-left: 2rem;
+    outline: none;
+}
+
+.principal-main__comment-list-container {
+    overflow: hidden;
+    background-color: aqua;
+    height: 75%;
+    padding: 1rem;
+    border-radius: .6rem;
+}
+
+.principal-main__comment-list-container:hover {
+    overflow-y: visible;
+}
+
+.principal-main__comment-item {
+    display: flex;
+    margin-bottom: 2rem;
+    padding-bottom: .5rem;
+    border-bottom: .1rem solid #495167;
+}
+
+.principal-main__user-picture img{
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.principal-main__comment-item div {
+    width: 80%;
+    margin-left: 2rem;
+    font-size: 1.2em;
+}
+
+.principal-main__suggestions-container {
+    width: 40%;
+    height: 100%;
+    background-color: aqua;
+    padding: 3rem;
+}
+
+.principal-main__suggestion-list {
+    background-color: aquamarine;
+    height: 90%;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.principal-main__suggestion-list:hover {
+    overflow-y: visible;
+}
