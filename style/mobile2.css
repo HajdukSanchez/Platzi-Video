@@ -1,0 +1,48 @@
+main {
+    width: 100vw;
+    grid-template-rows: 40% 20% 100% 70%;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "video-container"
+        "video-options"
+        "principal-main"
+        "left-container";
+}
+
+.left-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 45% 45%;
+    grid-template-areas:
+    "title"
+    "my_Playlist"
+    "friends_playlist";
+}
+
+.left-container__playList {
+    height: 80%;
+}
+
+.left-container__friends-list {
+    height: 90%;
+}
+
+.principal-main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.principal-main__comments-container {
+    width: 100%;
+    height: 50%;
+    padding-bottom: 4rem;
+}
+
+.principal-main__suggestions-container {
+    width: 100%;
+    height: 50%;
+    padding-top: 0;
+}
+
+.button-add-list {
+    width: 40%;
+}

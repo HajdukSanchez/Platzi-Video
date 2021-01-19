@@ -1,0 +1,17 @@
+main {
+    width: 100vw;
+    margin: 0;
+}
+
+.left-container {
+    padding-top: 3rem;
+}
+
+.left-container__title {
+    display: inline-grid;
+}
+
+.left-container__playList {
+    height: 85%;
+    margin-top: 1rem;
+}

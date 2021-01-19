@@ -24,7 +24,8 @@ body {
 
 main {
     display: grid;
-    grid-template: minmax(40%, 3fr) minmax(10%, 1fr) minmax(40%, 3fr) / minmax(20%, 1.3fr) 3fr 2fr;
+    grid-template-rows: minmax(45vh, 3fr) minmax(15vh, 1fr) minmax(40vh, 3fr);
+    grid-template-columns: minmax(20%, 1.3fr) minmax(40%, 3fr) minmax(40%, 3fr);
     grid-template-areas:
         "left-container video-container video-container"
         "left-container video-options video-options"
@@ -37,7 +38,7 @@ main {
 .left-container {
     grid-area: left-container;
     background-color: #131414;
-    padding: 4rem 1rem 4rem 2rem;
+    padding: 4rem 0rem 4rem 1rem;
     display: grid;
     grid-template-rows: 10% 45% 45%;
     grid-template-columns: minmax(80%, 1fr);
@@ -59,7 +60,7 @@ main {
 }
 
 .left-container__overlay {
-    padding-top: 0.5rem;
+    /* padding-top: 0.5rem; */
     height: 90%;
     cursor: pointer;
     padding-right: 2rem;
@@ -84,7 +85,6 @@ main {
 }
 
 .left-container__friends-list{
-    padding-top: .5rem;
     padding-left: 2.2rem;
     /* background-color: blue; */
     height: 85%;
@@ -94,6 +94,9 @@ main {
     overflow-wrap: break-word;
     cursor: pointer;
     text-align: justify;
+    list-style: none;
+    padding-left: 2rem;
+    height: 93%;
 }
 
 .left-container__video-item:hover, .left-container__friend-item:hover {
@@ -106,12 +109,6 @@ main {
 
 .left-container__friends-list:hover {
     overflow-Y: overlay;
-}
-
-.left-container__friends-list {
-    list-style: none;
-    padding-left: 2rem;
-    height: 93%;
 }
 
 .left-container__friend-item {
@@ -168,14 +165,13 @@ main {
 }
 
 .video-options__buttons {
-    width: 30%;
-    /* background-color: aliceblue; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .button {
+    margin-left: 3rem;
     outline: none;
     border: none;
     cursor: pointer;
@@ -183,7 +179,8 @@ main {
 }
 
 .button-add-list {
-    width: 50%;
+    margin: 0;
+    width: 20%;
     padding: .7rem;
     border-radius: .6rem;
     outline: none;
@@ -313,4 +310,3 @@ main {
     width: 100%;
     border-radius: .6rem;
 }
-

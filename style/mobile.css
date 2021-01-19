@@ -1,0 +1,38 @@
+main {
+    width: 100vw;
+    margin: 0 auto;
+    grid-template-columns: minmax(50%, 1fr) minmax(50%, 1fr);
+    grid-template-rows: 40vh 15vh 45vh 60vh;
+    grid-template-areas:"video-container video-container"
+                        "video-options video-options"
+                        "principal-main principal-main"
+                        "left-container left-container";
+}
+
+.left-container {
+    padding: 3rem;
+    grid-template-rows: 10% 90%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "title title"
+        "friends_playlist my_Playlist";
+}
+
+.left-container__title {
+    grid-area: title;
+    display: block;
+}
+
+.left-container__playList {
+    margin: 0;
+    height: 90%;
+}
+
+.left-container__friends-list {
+    height: 88%;
+}
+
+.principal-main__comment-list-container {
+    height: 69%;
+}
+
