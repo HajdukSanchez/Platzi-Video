@@ -38,7 +38,7 @@ main {
 .left-container {
     grid-area: left-container;
     background-color: #131414;
-    padding: 4rem 0rem 4rem 1rem;
+    padding: 4rem .5rem 4rem 1rem;
     display: grid;
     grid-template-rows: 10% 45% 45%;
     grid-template-columns: minmax(80%, 1fr);
@@ -308,5 +308,19 @@ main {
 
 .principal-main__sugesstion-picture img {
     width: 100%;
+    border-radius: .6rem;
+}
+
+*::-webkit-scrollbar {
+    width: 1rem;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #343536;
+    border-radius: .6rem;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: var(--secundary-color);
     border-radius: .6rem;
 }
