@@ -18,15 +18,20 @@ html {
 }
 
 body {
-    padding: 0 40rem;
+    /* padding: 0 40rem; */
     background-color: var(--secundary-color);
 }
 
 main {
     display: grid;
     grid-template: minmax(40%, 3fr) minmax(10%, 1fr) minmax(40%, 3fr) / minmax(20%, 1.3fr) 3fr 2fr;
-    grid-template-areas: "left-container video-container video-container" "left-container video-options video-options" "left-container principal-main principal-main";
+    grid-template-areas:
+        "left-container video-container video-container"
+        "left-container video-options video-options"
+        "left-container principal-main principal-main";
     height: 100vh;
+    margin: 0 auto;
+    width: 60vw;
 }
 
 .left-container {
@@ -53,12 +58,32 @@ main {
     margin-bottom: 3rem
 }
 
+.left-container__overlay {
+    padding-top: 0.5rem;
+    height: 90%;
+    cursor: pointer;
+    padding-right: 2rem;
+    overflow-y: hidden;
+    overflow-wrap: break-word;
+}
+
+.left-container__overlay:hover {
+    overflow-y: scroll;
+}
+
+.left-container__videos {
+    padding-left: 2.2rem;
+    height: 100%;
+    font-size: 1.3em;
+}
+
+
 .left-container__playList {
     height: 90%;
     /* background-color: red; */
 }
 
-.left-container__videos, .left-container__friends-list{
+.left-container__friends-list{
     padding-top: .5rem;
     padding-left: 2.2rem;
     /* background-color: blue; */
@@ -79,13 +104,9 @@ main {
     margin-bottom: 1rem;
 }
 
-.left-container__videos:hover, .left-container__friends-list:hover {
+.left-container__friends-list:hover {
     overflow-Y: overlay;
 }
-
-/* .left-container__friends {
-    background-color: violet
-} */
 
 .left-container__friends-list {
     list-style: none;
