@@ -16,7 +16,7 @@ Technologies of the project
 
 Jozek Hajduk - hajduksanchez.dev@gmail.com
 
-Project Link: [https://github.com/HajdukSanchez/Blog-CSS](https://github.com/HajdukSanchez/Blog-CSS)
+Project Link: [https://github.com/HajdukSanchez/Platzi-Video](https://github.com/HajdukSanchez/Platzi-Video)
 
 [<img align="left" alt="LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />](https://www.linkedin.com/in/jozek-hajduk/)
 [<img align="left" alt="Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />](https://twitter.com/HajdukJozek)
